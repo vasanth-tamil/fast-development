@@ -1,2 +1,1 @@
-# flask
-simple flask easy copy and paste default codes
+## Using code snippets for my simple apps
