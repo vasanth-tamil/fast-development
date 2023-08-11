@@ -155,6 +155,27 @@ Route::middleware(['auth:admin'])->get('/user', function(){
 ```
 **token check**
 ```php
-auth()->user()->tokenCan
+auth()->user()->tokenCan('key')
 ```
 https://stackoverflow.com/questions/61170647/laravel-sanctum-can-be-use-multiauth-guard
+**push template**
+```php
+@stack("script_1")
+```
+```php
+@push("script_1")
+    // code here
+@endpush()
+```
+**password confirm**
+```php
+$request->validate([
+    'password' => 'required|min:6|confirmed',
+]);
+```
+parse variables like this
+```text
+password
+password_confirmation
+```
+https://laravel.com/docs/4.2/validation#rule-confirmed
