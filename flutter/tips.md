@@ -74,3 +74,18 @@ import 'package:intl/intl.dart';
 DateTime now = DateTime.now();
 String formattedDate = DateFormat('yyyy-MM-dd – kk:mm').format(now);
 ```
+**Flutter rename**
+```text
+flutter pub add rename
+```
+```text
+flutter pub global activate rename
+```
+```text
+flutter pub global run rename --bundleId com.onatcipli.networkUpp
+flutter pub global run rename --appname "Network Upp"
+```
+or
+```text
+flutter pub global run rename --appname (-a) yourappname --target (-t) [android, ios, web, windows, macOS, linux]
+```

@@ -179,3 +179,16 @@ password
 password_confirmation
 ```
 https://laravel.com/docs/4.2/validation#rule-confirmed
+
+laravel excel import and export
+
+https://www.positronx.io/laravel-import-expert-excel-and-csv-file-tutorial-with-example/
+
+**library**
+```
+composer require maatwebsite/excel
+```
+**laravel speed optimization**
+```
+https://www.cloudways.com/blog/laravel-performance-optimization/
+```
