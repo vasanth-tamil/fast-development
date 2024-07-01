@@ -147,3 +147,20 @@ return [
 
 ];
 ```
+3. and validations
+```php
+$this->validateRules = [
+    "name" => "required|unique:categories,name",
+];
+
+$apiValidate = $this->apiValidate($request->all());
+
+// validations with errors
+if($apiValidate) {
+    return $this->apiResponse($apiValidate, 400);
+}
+
+// ... code here
+
+return $this->apiResponse([], 201);
+```
